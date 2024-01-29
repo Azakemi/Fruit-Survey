@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f8f8f8;
+    }
+    form {
+      border: 2px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: rgb(243, 220, 220); 
+    }
+    h1 {
+      color: #43b047; 
+    }
+  </style>
+  <title>World of Fruit - Fruit Survey</title>
+</head>
+<body>
+
+<form action="/submit_form" method="post" align="center">
+  <h1>World of Fruit - Fruit Survey</h1>
+  <p>Welcome to the World of Fruit Kundanika! We invite you to participate in our Fruit Survey to learn more about your preferences.Can you please help?</p>
+  
+  <label for="name">Name:</label><br />
+  <input type="text" id="name" name="name" /><br />
+  
+  <label for="address">Address:</label><br />
+  <input type="text" id="address" name="address" /><br />
+  
+  <label for="email">Email:</label><br />
+  <input type="email" id="email" name="email" /><br />
+  
+  <label for="fruit">How many pieces of fruit do you eat per day?</label><br />
+  <input type="radio" id="fruit_0" name="fruit" value="0" />
+  <label for="fruit_0">0</label>
+  <input type="radio" id="fruit_1" name="fruit" value="1" />
+  <label for="fruit_1">1</label>
+  <input type="radio" id="fruit_2" name="fruit" value="2" />
+  <label for="fruit_2">2</label>
+  <input type="radio" id="fruit_more" name="fruit" value="more" />
+  <label for="fruit_more">More than two</label><br />
+
+  <label for="brochure">Would you like a brochure?</label><br />
+  <input type="checkbox" id="brochure" name="brochure" value="yes" />
+  <label for="brochure">Yes</label><br />
+  
+  <label for="favorite_fruit">My favorite fruit:</label><br />
+  <select id="favorite_fruit" name="favorite_fruit" multiple>
+    <option value="apple">Apple</option>
+    <option value="banana">Banana</option>
+    <option value="plum">Plum</option>
+    <option value="orange">Orange</option>
+    <option value="strawberry">Strawberry</option>
+    <option value="pomegranate">Pomegranate</option>
+ 
+  </select>
+  <br />
+<br /><br>
+  <input type="submit" value="Submit" />
+</form>
+
+</body>
+</html>
